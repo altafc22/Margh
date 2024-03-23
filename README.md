@@ -7,6 +7,11 @@ This repository contains a Assignment project made in Kotlin using AndroidX, MVV
     <img src="https://github.com/altafc22/Margh/blob/main/images/image2.png" alt="Profile Page" width="200">
 </div>
 
+## Download APK
+<div style="display: flex; justify-content: space-between;">
+    <a href="https://github.com/altafc22/Margh/blob/main/apk/app-debug.apk">Download App</a>
+</div>
+
 
 ## The app has the following base packages:
 
