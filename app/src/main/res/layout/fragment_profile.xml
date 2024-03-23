@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.altafrazzaque.margh.views.QuotesViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/header_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAlignment="center"
+            android:backgroundTint="@color/grey7"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintStart_toStartOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            android:textSize="16sp"
+            android:text="sample@email.com"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/avatar"
+            android:background="@drawable/rounded_bg_with_stroke"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            android:layout_marginTop="-32dp"/>
+
+
+        <TextView
+            android:id="@+id/btnUploadQuote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_bg_with_stroke"
+            android:backgroundTint="@color/grey7"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple32dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAvatar"
+            android:text="Upload your quotes" />
+
+        <TextView
+            android:id="@+id/btnAboutUs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_bg_with_stroke"
+            android:backgroundTint="@color/grey7"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple32dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUploadQuote"
+            android:text="About Us" />
+
+        <TextView
+            android:id="@+id/btnContactUs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_bg_with_stroke"
+            android:backgroundTint="@color/grey7"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple32dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAboutUs"
+            android:text="Contact Us" />
+
+        <TextView
+            android:id="@+id/btnShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_bg_with_stroke"
+            android:backgroundTint="@color/grey7"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple32dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnContactUs"
+            android:text="Share" />
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_bg_with_stroke"
+            android:backgroundTint="@color/grey7"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple32dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnShare"
+            android:text="Logout" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

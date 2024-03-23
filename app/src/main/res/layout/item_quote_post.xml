@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cvQuote"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardElevation="4dp"
+       app:cardCornerRadius="12dp"
+       android:layout_marginHorizontal="8dp"
+       android:layout_marginVertical="4dp"
+       android:foreground="@drawable/ripple12dp"
+       android:clickable="true"
+       android:focusable="true">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_white_rounded_12dp"
+           >
+
+           <ImageView
+               android:id="@+id/image"
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:src="@tools:sample/backgrounds/scenic"
+               android:scaleType="centerCrop"
+               />
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:paddingHorizontal="16dp"
+               android:background="@color/white"
+               >
+
+               <TextView
+                   android:id="@+id/btn_save"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackgroundBorderless"
+                   android:gravity="center_vertical"
+                   android:padding="12dp"
+                   android:text="@string/save"
+                   android:textColor="@color/purple_500"
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   android:drawablePadding="8dp"
+                   app:drawableStartCompat="@drawable/heart_empty"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:drawableTint="@color/purple_500" />
+
+
+               <TextView
+                   android:id="@+id/btnDownload"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackgroundBorderless"
+                   android:gravity="center_vertical"
+                   android:padding="12dp"
+                   android:text="@string/download"
+                   android:textColor="@color/purple_500"
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   app:drawableStartCompat="@drawable/download"
+                   app:drawableTint="@color/purple_500"
+                   app:layout_constraintStart_toEndOf="@+id/btn_save"
+                   app:layout_constraintEnd_toStartOf="@+id/btnShare"
+                   app:layout_constraintTop_toTopOf="parent"
+                   android:drawablePadding="8dp"
+                   app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+               <TextView
+                   android:id="@+id/btnShare"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?selectableItemBackgroundBorderless"
+                   android:gravity="center_vertical"
+                   android:padding="12dp"
+                   android:text="@string/share"
+                   android:textColor="@color/purple_500"
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   android:drawablePadding="8dp"
+                   app:drawableStartCompat="@drawable/share"
+                   app:drawableTint="@color/purple_500"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.cardview.widget.CardView>
+
+</layout>

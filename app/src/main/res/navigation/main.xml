@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.altafrazzaque.margh.views.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_page_to_history_page"
+            app:destination="@id/profile" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.altafrazzaque.margh.views.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+
+</navigation>
+
